@@ -1,0 +1,104 @@
+.emd-modal {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    display: none;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+}
+.emd-modal .emd-modal-dialog {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    left: 50%;
+    margin-left: -298px;
+    padding-bottom: 30px;
+    position: absolute;
+    top: -100%;
+    width: 596px;
+    z-index: 100001;
+}
+@media (max-width: 650px) {
+.emd-modal .emd-modal-dialog {
+    box-sizing: border-box;
+    margin-left: -50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+.emd-modal .emd-modal-dialog .emd-modal-panel > h3 > strong {
+    font-size: 1.3em;
+}
+}
+.emd-modal.active {
+    display: block;
+}
+.emd-modal.active::before {
+    display: block;
+}
+.emd-modal.active .emd-modal-dialog {
+    top: 10%;
+}
+.emd-modal .emd-modal-body, .emd-modal .emd-modal-footer {
+    background: #fefefe none repeat scroll 0 0;
+    border: 0 none;
+    padding: 20px;
+}
+.emd-modal .emd-modal-body {
+    border-bottom: 0 none;
+}
+.emd-modal .emd-modal-body p {
+    font-size: 14px;
+}
+.emd-modal .emd-modal-body h2 {
+    font-size: 20px;
+}
+.emd-modal .emd-modal-body > div {
+    margin-top: 10px;
+}
+.emd-modal .emd-modal-body > div h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+}
+.emd-modal .emd-modal-footer {
+    border-top: 1px solid #eeeeee;
+    text-align: right;
+}
+.emd-modal .emd-modal-footer > .button {
+    margin: 0 7px;
+}
+.emd-modal .emd-modal-footer > .button:first-child {
+    margin: 0;
+}
+.emd-modal .emd-modal-panel > .notice.inline {
+    display: none;
+    margin: 0;
+}
+.emd-modal .emd-modal-panel:not(.active) {
+    display: none;
+}
+body.has.emd-modal {
+    overflow: hidden;
+}
+.emd-modal.emd-modal-deactivation-feedback .reason-input {
+    margin: 3px 0 3px 22px;
+}
+.emd-modal.emd-modal-deactivation-feedback .reason-input input, .emd-modal.emd-modal-deactivation-feedback .reason-input textarea {
+    width: 100%;
+}
+@media (max-width: 650px) {
+.emd-modal.emd-modal-deactivation-feedback li.reason li.reason {
+    margin-bottom: 10px;
+}
+.emd-modal.emd-modal-deactivation-feedback li.reason li.reason .reason-input {
+    margin-left: 29px;
+}
+.emd-modal.emd-modal-deactivation-feedback li.reason li.reason label {
+    display: table;
+}
+.emd-modal.emd-modal-deactivation-feedback li.reason li.reason label > span {
+    display: table-cell;
+    font-size: 1.3em;
+}
+}

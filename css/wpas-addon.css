@@ -1,0 +1,25 @@
+#plugin-review{
+padding-top:10px;
+}
+#plugin-review .plugin-review-star{
+color:#FEBE12;
+}
+#plugin-review .plugin-review-text,
+#plugin-review .plugin-review-star{
+display:inline-block;
+padding-right:10px;
+}
+#support-header{
+padding:10px 0;
+font-size:16px;
+}
+div.plugin-review{
+padding:10px;
+}
+#wpas-debug{
+background-color:#fff;
+padding:20px;
+margin-top:10px;
+border: 1px solid #777777;
+border-radius:4px;
+}

@@ -1,0 +1,39 @@
+#wpas-about{
+font-size:18px;
+color: #555d66;}
+#wpas-about li,
+#wpas-about p {
+    font-size: inherit;
+ line-height:30px;
+ margin-bottom:10px;
+}
+#wpas-about img {
+border:2px solid #fff;
+box-shadow: 10px 10px 5px #ccc;
+-moz-box-shadow: 10px 10px 5px #ccc;
+-webkit-box-shadow: 10px 10px 5px #ccc;
+-khtml-box-shadow: 10px 10px 5px #ccc;
+}
+#wpas-about h2{
+text-align:left;
+}
+#wpas-about .getting-started li::before,
+#wpas-about .resources li::before,
+#wpas-about .whats-new h2::before {
+    padding: 3px 0;
+    font-size:20px;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block;
+    font-family: 'dashicons';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: inherit;
+    vertical-align: top;
+}
+span.blue {
+  background: #5178D0;
+}
+span.red {
+  background: red;
+}
